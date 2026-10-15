@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Visitas Agrícolas",
+    "slug": "visitas-agricolas",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "O app usa a câmera para registrar fotos das visitas técnicas."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "O app usa sua localização para registrar onde a visita técnica foi realizada."
+        }
+      ],
+      "expo-status-bar"
+    ]
+  }
+}
